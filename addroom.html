@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Let's Chat
+    </title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+<script src="addroom.js"></script>
+</head>
+
+<body style="background-color:cornflowerblue ;">
+    <img src="ts.jpg" style="width: 1263px; height: 500px; border: radius 200px;">
+
+    <br><br>
+
+    <center>
+    <input type="text" id="room_name" placeholder="#room name" style="border-radius: 400px; background-color:aquamarine ; width:376px ; height:30px;">
+<br>
+    <br>
+<button onclick="addroom()" style="border-radius: 300px; height: 31px; width: 250px; background-color:blanchedalmond;"><b>Continue</b></button>
+
+<br><br>
+
+<div id="trend_room" style="border:black; border-radius:400px; background-color:crimson;"></div>
+    </center>
+
+    <script>
+const firebaseConfig = {
+    apiKey: "AIzaSyBHLi5i7SVca9FOO9kCIoXwc19xK1xFUHU",
+    authDomain: "let-s--cgat.firebaseapp.com",
+    projectId: "let-s--cgat",
+    storageBucket: "let-s--cgat.appspot.com",
+    messagingSenderId: "797771845026",
+    appId: "1:797771845026:web:5a6dc5358241bf2e8036fb"
+  };
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+    </script>
+</body>
+
